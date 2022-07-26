@@ -1,0 +1,622 @@
+/** ======== GLOBAL STYLES ======== */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: #EDFEFF;
+}
+
+/*  remove blue highlighting  */
+::selection {
+    color: none;
+    background: rgba(0, 0, 255, 0.1);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+picture{
+    display: block;
+}
+
+
+
+html,body{
+    font-size: 60.5%;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/static/fonts/Poppins-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/static/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url("/static/fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url("/static/fonts/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url("/static/fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+
+/** ======== NAV MOBILE STYLES ======== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: var(--Light-Pink);
+    width: 88%;
+    padding: 23px 0;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 97px;
+    height: 16px;
+}
+
+.nav__button{
+    border-radius: 5000px;
+    font-size: 1.1rem;
+    padding: 5px 17px;
+    background-color: transparent;
+    border: 1px solid var(--Light-Pink);
+    font-family: "Open-Sans";
+    font-weight: 600;
+    color: var(--Light-Pink);
+}
+
+/* ======== */
+
+
+/** ======== CTA MOBILE STYLES ======== */
+
+.cta{
+    padding: 89px 0;
+    width: 81%;
+    margin: 0 auto;
+    color: var(--Very-Dark-Cyan);
+}
+
+.cta__texts{
+    text-align: center;
+    margin-bottom: 48.5px;
+}
+
+.cta__title{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta__paragraph{
+    font-family: "Open-Sans";
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+
+.button{
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Blue);
+    padding: 13px 38px;
+    border-radius: 5000px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Open-Sans";
+    font-weight: 700;
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 8px 20px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 20px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 20px -11px rgba(0,0,0,0.75);
+    margin-bottom: 102px;
+}
+
+.cta__image{
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ======== */
+
+
+/** ======== STATS MOBILE STYLES ======== */
+
+.stats{
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Open-Sans";
+    padding: 32px 0 26px;
+}
+
+.stats__card{
+    width: 155px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats__card:nth-child(1){
+    margin-bottom: 100px;
+}
+
+.stats__logo{
+    align-self: flex-start;
+    width: 17%;
+}
+
+.stats__number{
+    font-size: 58px;
+    font-weight: 700;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 7px;
+}
+
+.stats__title{
+    font-size: 13.5px;
+    color: rgb(128, 130, 138);
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+/* ======== */
+
+
+/** ======== GROW MOBILE STYLES ======== */
+
+.grow, .users{
+    background-color: #F6FBFF;
+}
+
+.img__container{
+    display: block;
+    width: 100%;
+    
+}
+
+.content__picture{
+    width: 70%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 75px;
+}
+
+/* ======== */
+
+
+/** ======== SECTION MOBILE STYLES ======== */
+
+.content{
+    padding: 77px 0 50px;
+} 
+
+.section__texts{
+    text-align: center;
+    font-family: "Poppins";
+    color: var(--Very-Dark-Cyan);
+    padding: 0px 35px;
+}
+
+.section__title{
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.section__paragraph{
+    font-size: 1.32rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* ======== */
+
+
+/** ======== FLOW MOBILE STYLES ======== */
+
+.flowing{
+    margin-bottom: 30px;
+}
+
+/* ======== */
+
+
+/** ======== USERS MOBILE STYLES ======== */
+
+#users_text{
+    margin-bottom: 50px;
+}
+
+/* ======== */
+
+
+/** ======== WAVES MOBILE STYLES ======== */
+
+/* Removes white space that picture creates */
+.wave{
+    display: block;
+    width: 100%;
+}
+
+.bottom_wave{
+    margin-bottom: 60px;
+}
+
+/* ======== */
+
+
+/** ======== READY MOBILE STYLES ======== */
+
+.ready{
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.ready__title{
+    font-size: 2.35rem;
+    font-family: "Poppins";
+    font-weight: 700;
+    margin-bottom: 38px;
+}
+
+/* ======== */
+
+
+/** ======== FOOTER MOBILE STYLES ======== */
+
+footer{
+    background-color: #00252E;
+    font-family: "Open-Sans";
+    color: white;
+}
+
+footer .content{
+    width: 85%;
+    padding: 69px 0 0;
+    margin: 0 auto
+}
+
+.footer__news{
+    margin-bottom: 95px;
+}
+
+.footer__title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer__text{
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.footer__input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.footer__button{
+    background-color: var(--Pink);
+    padding: 13px 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 8px;
+    color: inherit;
+}
+
+.footer__logo{
+    width: 62%;
+    margin-bottom: 15px;
+}
+
+.footer__phone{
+    margin-bottom: 20px;
+}
+
+.footer__phone, .footer__email{
+    display: flex;
+    align-items: center;
+    font-size: 1.32rem;
+    font-weight: 600;
+}
+
+.footer__phone img, .footer__email img{
+    margin-right: 20px;
+}
+
+.footer__socials{
+    padding: 45px 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social{
+    margin-right: 12px;
+    width: 8.5%;
+}
+/* ======== */
+
+
+
+/** ========== MEDIA QUERYS ========== */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /** ======== NAV STYLES ======== */
+
+    nav{
+        padding: 75px 0;
+    }
+
+    .nav__logo{
+        width: 238px; 
+        height: 38px;
+    }
+
+    .nav__button{
+        font-size: 1.6rem;
+        padding: 11px 33px;
+    }
+
+    /* ======== */
+
+
+    /** ======== CTA STYLES ======== */
+
+    .cta{
+        padding: 152px 0 130px;
+        width: 71%;
+        letter-spacing: -1px;
+    }
+
+    .cta__texts{
+        margin-bottom: 48px;
+    }
+
+    .cta__title{
+        font-size: 5rem;
+        margin-bottom: 22px;
+        word-spacing: 2px;
+    }
+
+    .cta__paragraph{
+        font-size: 2.1rem;
+        line-height: 30px;
+        width: 55.5%;
+        margin: 0 auto;
+        word-spacing: 3px;
+    }
+    
+    .button{
+        padding: 27px 87px;
+        text-align: center;
+        width: 401px;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+        margin-bottom: 110px;
+    }
+
+    /* ======== */
+
+
+    /** ======== STATS STYLES ======== */
+    
+    .stats{
+        display: flex;
+        width: 86%;
+        padding: 0px 0;
+        margin-bottom: 137px;
+    }   
+
+    .stats__card{
+        width: 250px;
+    }
+
+    .stats__card:nth-child(1){
+        margin-bottom: 0;
+    }
+
+    .stats__logo{
+        align-self: flex-start;
+        width: 18%;
+    }
+    
+    .stats__number{
+        font-size: 95px;
+        font-weight: 700;
+        margin-bottom: 5.5px;
+    }
+
+    .stats__title{
+        font-size: 23px;
+    }
+
+    /* ======== */
+
+
+   /** ======== SECTION STYLES ======== */
+
+   .section__texts{
+    text-align: left;
+   }
+
+   .content__picture{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 0px;
+    }
+
+   .content{
+        display: flex;
+        align-items: center;
+        padding: 70px 0;
+        width: 85%;
+        margin: 0 auto;
+        max-width: 1320px;
+   } 
+
+   #grow_image, #users_image {
+        order: 2;
+   }
+
+    #grow_text, #users_image{
+        order: 1;
+    }
+
+    .section__title{
+        font-size: 4.1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .section__paragraph{
+        font-size: 1.6rem;
+        line-height: 25px;
+        width: 87%;
+    }
+
+    /* ======== */
+
+        
+    /** ======== USERS STYLES ======== */
+
+    #users_text{
+        margin-bottom: 0;
+    }
+
+
+    /* ======== */
+
+        
+    /** ======== READY STYLES ======== */
+
+    .ready__title{
+        font-size: 4rem;
+        margin-bottom: 35px;
+    }
+
+    .ready{
+        padding-top: 80px;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    /* ======== */
+
+
+    /** ======== FOOTER STYLES ======== */
+    footer .content{
+        display: flex;
+        align-items: flex-start;
+        padding: 100px 0 60px;
+    }
+
+    form{
+        display: flex;
+    }
+
+    .footer__contact{
+        order: 1;
+        width: 50%;
+        padding-right: 8%;
+    }
+
+    .footer__news{
+        order: 2;
+        width: 50%;
+    }
+
+    .footer__logo{
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .footer__title{
+        font-size: 2.5rem;
+    }
+
+    .footer__text{
+        width: 60%;
+    }
+
+    .footer__input{
+        display: inline;
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    .footer__button{
+        display: inline;
+        width: 20%;
+        margin-left: 20px;
+    }
+
+    .footer__phone, .footer__email{
+        font-size: 1.5rem;
+    }
+
+    .footer__socials{
+        padding: 55px 0 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__social{
+        width: 7.5%;
+    }
+    /* ======== */
+
+}
