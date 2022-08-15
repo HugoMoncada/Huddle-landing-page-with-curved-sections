@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Watch it live here](https://huddle-landing-page-with-curved-sections-ten-woad.vercel.app/)
 
 
 ## My process
